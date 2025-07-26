@@ -1,0 +1,113 @@
+.sidebar-container{
+    // border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .upload_tab{
+        // border: 1px solid black;
+        margin-bottom: 30px;
+        padding: 10px;
+
+        .logo{
+            // border: 1px solid green;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .header{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                svg{
+                    color: rgb(59, 130, 246);
+                    width: 36px;
+                    height: 36px;
+                }
+
+                p{
+                    margin: 0;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+
+            .close{
+                background-color: unset;
+                padding: unset;
+            }
+        }
+
+        .new_cta {
+            color: white;
+            background-color: black;
+            width: 100%;
+        }
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        .navbar_tab{
+            padding: 10px;
+            margin-bottom: 6px;
+
+            .list{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                .item{
+                    margin-bottom: 15px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+
+                    .item_cta{
+                        color: black;
+                        background-color: unset;
+                        width: 100%;
+                        justify-content: flex-start;
+
+                        &:hover{
+                            background-color: rgb(219, 212, 212);
+                        }
+                    }
+                }
+            }
+        }
+
+        .storage_tab{
+            border-top: 1px solid gray;
+            padding: 15px 10px;
+
+            .summary{
+                // border: 1px solid green;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5px;
+
+                p{
+                    margin: 0;
+                    color: gray;
+                    font-size: 14px;
+                }
+
+                .mb{
+                    font-size: 12px;
+                }
+            }
+
+            .input{
+                width: 100%;
+            }
+        }
+    }
+}

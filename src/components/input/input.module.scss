@@ -1,0 +1,12 @@
+.input_container{
+    padding: 6px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #d6c9c9;
+    padding-left: 12px;
+
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}

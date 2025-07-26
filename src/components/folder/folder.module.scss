@@ -1,0 +1,31 @@
+.folder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 12px 24px;
+
+    .icon{
+        margin-bottom: 10px;
+    }
+    
+    .title{
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .lastModified{
+        color: grey;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .size{
+        color: grey;
+        margin: 0;
+    }
+}
