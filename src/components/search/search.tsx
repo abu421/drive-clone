@@ -3,17 +3,19 @@ import Input from '../input/input';
 import { Search as SearchIcon } from 'lucide-react';
 
 interface SearchProps{
-    className?: string,
+    className?: {
+        wrapper?: string,
+        input?: string
+    },
     icon?: React.ReactNode,
-    placeholder?: string,
-    inputClassName?: string
+    placeholder?: string
 }
 
-const Search = ({className, icon, placeholder, inputClassName}: SearchProps) => {
+const Search = ({className, icon, placeholder}: SearchProps) => {
     return(
-        <div className={` ${styles['search-container']} ${className}`}>
+        <div className={` ${styles['search-container']} ${className?.wrapper}`}>
             {icon}
-            <Input placeholder={placeholder} className={inputClassName} />
+            <Input placeholder={placeholder} className={className?.input} />
         </div>
     )
 };

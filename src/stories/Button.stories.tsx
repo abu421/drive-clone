@@ -32,9 +32,16 @@ export const Primary: Story = {
   render: () => <Button>Click</Button>
 }
 
-export const ButtonWithIcon: Story = {
+export const ButtonTextIcon: Story = {
   args: {
     
   },
   render: () => <Button><Plus />Click</Button>
+};
+
+export const ButtonIcon: Story = {
+  args: {
+    
+  },
+  render: () => <Button><Plus /></Button>
 };
