@@ -1,14 +1,10 @@
-import Search from "@/components/search/search";
 import "./page.scss";
-import Sidebar from "@/components/sidebar/sidebar";
+import NavBar from "@/components/navbar/navbar";
 
 
 export default function Drive() {
   return (
-    <div>
-      {/* <Sidebar /> */}
-      <Search />
-    </div>
+    <NavBar />
   );
 }
 
