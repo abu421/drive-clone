@@ -30,7 +30,7 @@ export const Searchs: Story = {
     args: {
     icon: <SearchIcon className={styles.svgIcon} size={22} color={"rgb(171, 177, 185)"}/>,
     placeholder: 'Search in drive',
-    className: {
+    classNames: {
       input: styles.inputComponent
     }
   },

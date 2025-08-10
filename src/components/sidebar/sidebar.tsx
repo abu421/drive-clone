@@ -2,16 +2,24 @@ import styles from '@/components/sidebar/sidebar.module.scss';
 import Button from '../button/button';
 import { Cloud, Plus, X, Home, Clock, Star, Trash2, } from 'lucide-react';
 
-const Sidebar = () => {
+interface SideBarProps{
+    handleShowSideBar?: any
+    classNames?: {
+        wrapper?: string,
+        cross?: string
+    },
+}
+
+const Sidebar = ({handleShowSideBar, classNames}: SideBarProps) => {
     return(
-        <div className={styles['sidebar-container']}>
+        <div className={`${styles['sidebar-container']} ${classNames?.wrapper}`}>
             <div className={styles.upload_tab}>
                 <div className={styles.logo}>
                     <div className={styles.header}>
                         <Cloud />
                         <p>Drive</p>
                     </div>
-                    <Button className={styles.close}><X color='black' size={20}/></Button>
+                    <Button className={`${styles.close} ${classNames?.cross}`} onClick={handleShowSideBar}><X color='black' size={20}/></Button>
                 </div>
                 <Button className={styles.new_cta}><Plus /><span>New</span></Button>
             </div>
