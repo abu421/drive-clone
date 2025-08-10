@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "@/app/page.module.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={styles.body}>
         {children}
       </body>
     </html>
